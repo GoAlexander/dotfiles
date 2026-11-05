@@ -24,8 +24,10 @@ plugins=(
 )
 source "$OSH"/oh-my-bash.sh
 
-THEME_SHOW_CLOCK=false# from /usr/share/doc/fzf/README.Debiansource /usr/share/doc/fzf/examples/key-bindings.bash
-#source /usr/share/doc/fzf/examples/completion.bash # not necessery for ubuntu 22 and higher
+THEME_SHOW_CLOCK=false
+# from /usr/share/doc/fzf/README.Debian
+source /usr/share/doc/fzf/examples/key-bindings.bash
+#source /usr/share/doc/fzf/examples/completion.bash # not necessary for ubuntu >=v22
 FZF_DEFAULT_OPTS="--reverse --height 90% --border"
 FZF_CTRL_R_OPTS="--preview 'echo {2..} | batcat --color=always -pl sh' --preview-window wrap --preview-window=down:20%"
 FZF_CTRL_T_OPTS="--preview 'batcat --color=always {}' --preview-window=right:80%"
@@ -33,4 +35,3 @@ FZF_CTRL_T_OPTS="--preview 'batcat --color=always {}' --preview-window=right:80%
 # Ctrl + R searches in the command history and show the results
 # Ctrl + T searches for files in the current directory and subdirectories
 # Alt + C cd to any subdirectory
-
